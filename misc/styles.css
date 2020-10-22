@@ -1,0 +1,42 @@
+.cringe {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.game {
+    display: block;
+    height: 624px;
+    width: 816px;
+    border: none;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.title {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-bottom: 10px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+    justify-content: center;
+}
+
+.link-button {
+    height: 121px;
+    width: 132px;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.link-button:hover {
+    opacity: 1;
+    text-shadow: #8e8e8e;
+}
+
+/* Я и есть кринж */
