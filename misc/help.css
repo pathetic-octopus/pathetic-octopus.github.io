@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'a_MachinaOrtoSls';
+    src: url('/misc/fonts/a_MachinaOrtoSls-Bold.eot');
+    src: url('/misc/fonts/a_MachinaOrtoSls-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/misc/fonts/a_MachinaOrtoSls-Bold.woff2') format('woff2'),
+        url('/misc/fonts/a_MachinaOrtoSls-Bold.woff') format('woff'),
+        url('/misc/fonts/a_MachinaOrtoSls-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+}
+
+.help {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    padding-bottom: 15px;
+}
+
+.help-text > p.header {
+    font-size: 40px;
+    color: white;
+    text-shadow: #000 3px 0 1px, #000 0 3px 1px, #000 -3px 0 1px, #000 0 -3px 1px;
+}
+
+.help-text > p.header:first-letter {
+    color: red;
+}
+
+.help-text {
+    font-size: 30px;
+    font-family: a_MachinaOrtoSls, monospace;
+    max-width: 816px;
+    letter-spacing: 2px;
+    line-height: 1;
+}
+
+.continue-to-game {
+    margin-top: 10px;
+    font-size: 40px;
+    text-align: center;
+    font-family: a_MachinaOrtoSls, monospace;
+    color: white;
+    text-shadow: #000 3px 0 1px, #000 0 3px 1px, #000 -3px 0 1px, #000 0 -3px 1px;
+    margin-bottom: 100px;
+}
+
+.continue-to-game:first-letter {
+    color: red;
+}
+
+.continue-to-game:hover {
+    text-shadow: #000 4px 0 3px, #000 0 4px 3px, #000 -4px 0 3px, #000 0 -4px 3px;
+
+}
