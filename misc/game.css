@@ -45,4 +45,33 @@
     text-shadow: #8e8e8e;
 }
 
+@font-face {
+    font-family: 'a_MachinaOrtoSls';
+    src: url('/misc/fonts/a_MachinaOrtoSls-Bold.eot');
+    src: url('/misc/fonts/a_MachinaOrtoSls-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/misc/fonts/a_MachinaOrtoSls-Bold.woff2') format('woff2'),
+        url('/misc/fonts/a_MachinaOrtoSls-Bold.woff') format('woff'),
+        url('/misc/fonts/a_MachinaOrtoSls-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+.help-button {
+    font-size: 40px;
+    font-family: a_MachinaOrtoSls, monospace;
+    color: white;
+    text-shadow: #000 3px 0 1px, #000 0 3px 1px, #000 -3px 0 1px, #000 0 -3px 1px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.help-button:first-letter {
+    color: red;
+}
+
+.help-button:hover {
+    text-shadow: #000 4px 0 3px, #000 0 4px 3px, #000 -4px 0 3px, #000 0 -4px 3px;
+}
+
 /* Я и есть кринж */
