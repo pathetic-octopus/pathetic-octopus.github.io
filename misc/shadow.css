@@ -15,7 +15,7 @@
     justify-content: center;
 }
 
-.help {
+.shadow-page {
     display: flex;
     flex-direction: column;
 }
@@ -24,17 +24,22 @@
     padding-bottom: 15px;
 }
 
-.help-text > p.header {
+.shadow-text > p.header {
     font-size: 40px;
     color: white;
     text-shadow: #000 3px 0 1px, #000 0 3px 1px, #000 -3px 0 1px, #000 0 -3px 1px;
 }
 
-.help-text > p.header:first-letter {
+.shadow-text > p.header:first-letter {
     color: red;
 }
 
-.help-text {
+.shadow-text > p > span {
+    color: white;
+    text-shadow: #000 1px 0 1px, #000 0 1px 1px, #000 -1px 0 1px, #000 0 -1px 1px;
+}
+
+.shadow-text {
     font-size: 30px;
     font-family: a_MachinaOrtoSls, monospace;
     max-width: 816px;
@@ -42,7 +47,7 @@
     line-height: 1;
 }
 
-.continue-to-game {
+.link-button {
     margin-top: 10px;
     font-size: 40px;
     text-align: center;
@@ -52,10 +57,22 @@
     margin-bottom: 100px;
 }
 
-.continue-to-game:first-letter {
+.link-button:first-letter {
     color: red;
 }
 
-.continue-to-game:hover {
+.link-button:hover {
     text-shadow: #000 4px 0 3px, #000 0 4px 3px, #000 -4px 0 3px, #000 0 -4px 3px;
+}
+
+.button-container {
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.button-container > .link-button {
+    margin-bottom: 10px;
+    text-align: left;
 }

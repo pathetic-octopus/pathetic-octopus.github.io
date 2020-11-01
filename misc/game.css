@@ -5,9 +5,7 @@
 }
 
 .content {
-    position: fixed;
-    left: 50%;
-    transform: translate(-50%, 0);
+    margin: auto;
 }
 
 .game {
@@ -15,6 +13,8 @@
     height: 624px;
     width: 816px;
     border: none;
+    min-height: 624px;
+    min-width: 816px;
     overflow-y: auto;
     overflow-x: hidden;
 }
@@ -57,12 +57,28 @@
     font-display: swap;
 }
 
+@media screen and (max-width: 1100px) {
+    .cringe {
+        flex-direction: column;
+        align-items: center;
+    }
+    .game {
+        order: -1;
+        padding-bottom: 10px;
+    }
+    .links {
+        margin-top: 10px;
+        flex-direction: row;
+    }
+}
+
 .help-button {
     font-size: 40px;
     font-family: a_MachinaOrtoSls, monospace;
     color: white;
     text-shadow: #000 3px 0 1px, #000 0 3px 1px, #000 -3px 0 1px, #000 0 -3px 1px;
-    padding-top: 20px;
+    margin-top: 25px;
+    padding-bottom: 10px;
     text-align: center;
 }
 
@@ -72,6 +88,21 @@
 
 .help-button:hover {
     text-shadow: #000 4px 0 3px, #000 0 4px 3px, #000 -4px 0 3px, #000 0 -4px 3px;
+}
+
+.help-popup {
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: black;
+    height: 20px;
+    text-align: center;
+    color: white;
+}
+
+.help-popup.div {
+    vertical-align: center;
 }
 
 /* Я и есть кринж */
